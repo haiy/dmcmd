@@ -1,0 +1,18 @@
+{
+  "experiment_name":"test_exp_1",
+  "experiment_inputs":["train_input_1","train_input_2"],
+  "dependency_graph":{
+    "minMax1":["train_input_1"],
+    "minMax2":["train_input_2"],
+    "lr1":["train_input_1"],
+    "lr2":["train_input_2"],
+    "lr3":["lr1", "lr2"],
+    "lr1_eval":["lr1"],
+    "lr2_eval":["lr2"],
+    "lr3_eval":["lr3"]
+  },
+  "cmd_list":[
+    "run "
+  ]
+
+}
